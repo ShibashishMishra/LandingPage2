@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+#main{
+    min-height: 100vh;
+    width:100vw;
+}
+.top{
+    min-height: 60vh;
+    width:100%;
+    background-image: url(https://images.unsplash.com/photo-1489183988443-b37b7e119ba6?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom:5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+.text .image{
+    /* background-image: url(https://images.unsplash.com/photo-1537824598505-99ee03483384?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center; */
+    height:300px;
+    width:220px;
+}
+.image img{
+    height:300px;
+    width:220px;
+    border-radius: 10px;
+    transform:scale(1.0);
+    transition:0.7s ease-in-out;
+}
+.text .image img:hover{
+    transform:scale(1.1);
+    transition:0.7s ease-in-out;
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    font-size: 12px;
+}
+.bottom{
+    display: flex;
+    min-height: 40vh;
+    width: 100vw;
+}
+.b1{
+    /* background-image: url(https://images.unsplash.com/photo-1566438480900-0609be27a4be?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center; */
+    height: 40vh;
+    width: 30vw;
+    overflow: hidden;
+    position: relative;
+}
+.b1 img{
+    height:inherit;
+    width:inherit;
+    object-fit: cover;
+    z-index: -1;
+    transform:scale(1.0);
+    transition:1s ease-in-out;
+}
+.b1:hover img{
+    transform:scale(1.05);
+    transition:1s ease-in-out;
+}
+.b1 .overlay{
+    justify-content: right;
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    z-index: 1;
+}
+.b1 h1{
+    text-align: center;
+    padding:30px;
+}
+.b1 p{
+    color: white;
+    text-align: center;
+    padding:15px;
+}
+.b2{
+    width: 30vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+.b2 .up{
+    /* background-image: url(https://images.unsplash.com/photo-1560315925-4f698336e401?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center; */
+    height: 20vh;
+    width: 30vw;
+    overflow: hidden;
+    position: relative;
+}
+.b2 .up img{
+    height:inherit;
+    width:inherit;
+    object-fit: cover;
+    z-index: -1;
+    transform:scale(1.0);
+    transition:1s ease-in-out;
+}
+.b2 .up:hover img{
+    transform:scale(1.05);
+    transition:1s ease-in-out;
+}
+.b2 .up .overlay{
+    position:absolute;
+    height: inherit;
+    width: inherit;
+    background-color: rgba(216, 216, 216, 0.138);
+    z-index: 1;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 12px;
+}
+.b2 .up p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.b2 .down{
+    /* background-image: url(https://images.unsplash.com/photo-1613160058184-8fc2487dbf10?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center; */
+    height: 20vh;
+    width:30vw;
+    overflow: hidden;
+    position: relative;
+}
+.b2 .down img{
+    height:inherit;
+    width:inherit;
+    object-fit: cover;
+    z-index: -1;
+    transform:scale(1.0);
+    transition:1s ease-in-out;
+}
+.b2 .down h1{
+    font-size: 45px;
+}
+.b2 .down:hover img{
+    transform:scale(1.05);
+    transition:1s ease-in-out;
+}
+.b2 .down .overlay{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-color: rgba(255, 255, 255, 0.344);
+    z-index: 1;
+}
+.b3{
+    /* background-image: url(https://images.unsplash.com/photo-1586769852836-bc069f19e1b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center; */
+    height: 40vh;
+    width: 40vw;
+    overflow: hidden;
+    position: relative;
+}
+.b3 img{
+    height:inherit;
+    width:inherit;
+    object-fit: cover;
+    z-index: -1;
+    transform:scale(1.0);
+    transition:1s ease-in-out;
+}
+.b3:hover img{
+    transform:scale(1.05);
+    transition:1s ease-in-out;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: absolute;
+    margin-left: 50%;
+    height: inherit;
+    width: 50%;
+    padding: 4vw 3vh;
+    z-index: 1;
+}
+.b3 .overlay p{
+    padding:1.2vh;
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100%;
+        margin-left: initial;
+    }
+}
+@media(max-width:500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: 5vh;
+    }
+    .text .image{
+        height:200px;
+        width:140px;
+        margin-top: 20px;
+    }
+    .text .image img{
+        height:200px;
+        width:140px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100vw;
+        height: 30vh;
+    }
+   
+    .b2{
+        height:initial;
+    }
+    .b2 .up{
+        width: 100vw;
+        height: 30vh;
+    }
+  
+    .b2 .down{
+        width: 100vw;
+        height: 30vh;
+    }
+   
+    .b3{
+        width: 100vw;
+        height: 30vh;
+        background-position: left;
+    }
+}
